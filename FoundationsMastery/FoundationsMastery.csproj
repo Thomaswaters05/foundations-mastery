@@ -47,8 +47,10 @@
     <Compile Include="Factorial.cs" />
     <Compile Include="Interfaces\IFactorial.cs" />
     <Compile Include="Interfaces\ICustomString.cs" />
+    <Compile Include="Nfl.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TnTitans.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -13,7 +13,7 @@ namespace FoundationsMastery
             this.City = "Nashville";
             this.Rank = 17;
             this.Mascot = "T-rack";
-            this.Conference = "AFC South"
+            this.Conference = "AFC South";
 
         }
 

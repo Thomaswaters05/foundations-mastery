@@ -33,11 +33,11 @@ namespace FoundationsMasteryTests
         public void EnsureICanPassInACharEnumerable()
         {
           
-            char[] mychars = new char[] { 'a', 'b', 'c' };
+            char[] mychars = new char[] { 'd', 'o', 'c' };
             CustomString myString = new CustomString(mychars);
 
             int expected_length = 3;
-             int actual_length = myString.Length; ;
+            int actual_length = myString.Length; ;
 
             Assert.AreEqual(expected_length, actual_length);
         }
@@ -68,6 +68,42 @@ namespace FoundationsMasteryTests
             myString.Clear();
 
             //How do you ensure your clear function works ?
+        }
+
+        [TestMethod]
+        public void EnsuresConcat()
+        {
+            CustomString myNewString = new CustomString(new char[] { 'd', 'o', 'c' });
+            
+            var expectedResult = "doctor";
+            var actualResult = myNewString.Concat(new char[] {'t', 'o', 'r' });
+
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [TestMethod]
+        public void EnsureInterleave()
+        {
+            CustomString myNewString = new CustomString(new char[] { 'd', 'o', 'c' });
+
+            var expectedResult = "dtoocr";
+            var actualResult = myNewString.Interleave(new char[] { 't', 'o', 'r' });
+
+            Assert.AreEqual(expectedResult, actualResult);
+
+        }
+
+        [TestMethod]
+        public void EnsureToPrint()
+        {
+            char[] mychars = new char[] { 'd', 'o', 'c', 't' };
+            CustomString myString = new CustomString(mychars);
+
+            var expectedResult = "doct";
+            var actualResult = myString.Print();
+
+            Assert.AreEqual(expectedResult, actualResult);
+
         }
     }
 }
