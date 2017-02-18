@@ -19,7 +19,7 @@ namespace FoundationsMasteryTests
         public void EnsureFactorialCalcInterative()
         {
             Factorial factorial = new Factorial();
-            int expectedResult = 6;
+            int expectedResult = 24;
             int actualResult = factorial.Iterative(4);
 
             Assert.AreEqual(expectedResult, actualResult);

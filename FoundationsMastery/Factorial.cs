@@ -16,7 +16,7 @@ namespace FoundationsMastery
                 throw new ArgumentOutOfRangeException($"Value{n} is not greater than or equal to 1."); 
 
             int iterate = 1;
-            for (var i = 1; i < n; i++)
+            for (var i = 1; i <= n; i++)
             {
                 iterate *= i;
             }

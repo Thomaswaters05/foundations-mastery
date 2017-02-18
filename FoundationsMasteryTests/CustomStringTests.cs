@@ -71,6 +71,14 @@ namespace FoundationsMasteryTests
         }
 
         [TestMethod]
+        public void EnsuresLength()
+        {
+            CustomString myNewString = new CustomString(new List<char> { 'd', 'o', 'c' });
+
+            Assert.AreEqual(3, myNewString.Length);
+        }
+
+        [TestMethod]
         public void EnsuresConcat()
         {
             CustomString myNewString = new CustomString(new char[] { 'd', 'o', 'c' });

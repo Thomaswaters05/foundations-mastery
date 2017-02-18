@@ -8,13 +8,21 @@ namespace FoundationsMastery
 {
     public class TnTitans : Nfl
     {
-       public TnTitans ()
-        {
-            this.City = "Nashville";
-            this.Rank = 17;
-            this.Mascot = "T-rack";
-            this.Conference = "AFC South";
+        public int Rank { get; set; }
 
+       public void TeamRank()
+        {
+            this.Rank = 19;
+        }
+       public override void TeamSlogan ()
+        {
+            this.Slogan = "Titan Up!";
+
+        }
+
+        public override void SetConference()
+        {
+            this.Conference = "AFC South";
         }
 
 
