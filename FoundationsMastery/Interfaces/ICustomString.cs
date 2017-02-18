@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FoundationsMastery.Interfaces
 {
-    interface ICustomString
+    public interface ICustomString
     {
         IEnumerable<char> Contents { set; get; }
         int Length { get; }
